@@ -4,8 +4,9 @@ d=y["Before Course"]-y["After Course"]
 m=d.mean()
 s=(d.std())/sqrt(d.count())
 t= m/s
+t1=2.205
 print(t)
-if t>1.96 or t<-1.96 :
+if t>t1 or t<-t1 :
     print("Reject Null hypothesis")
 else: print("Accept Alternate Hypothesis")
 
