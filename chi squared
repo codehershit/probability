@@ -1,0 +1,27 @@
+import numpy as np
+Expected= np.array([33,67])
+Observed= np.array([11, 89])
+d= Observed-Expected
+z=sum(d**2/Expected)
+zc=3.84
+print(z)
+if z>zc :
+    print("Reject Null hypothesis")
+else: print("Cant Reject Null Hypothesis")
+# 21.89054726368159
+# Reject Null hypothesis
+
+
+
+import numpy as np
+Expected= np.array([33,67])
+Observed= np.array([31, 69])
+d= Observed-Expected
+z=sum(d**2/Expected)
+zc=3.84
+print(z)
+if z>zc :
+    print("Reject Null hypothesis")
+else: print("Cant Reject Null Hypothesis")
+# 0.18091361374943465
+# Cant Reject Null Hypothesis
