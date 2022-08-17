@@ -1,0 +1,13 @@
+import pandas as pd
+y=pd.read_csv("book1.csv")
+d=y["Before Course"]-y["After Course"]
+m=d.mean()
+s=(d.std())/sqrt(d.count())
+t= m/s
+print(t)
+if t>1.96 or t<-1.96 :
+    print("Reject Null hypothesis")
+else: print("Accept Alternate Hypothesis")
+
+Output- -3.4453597195535766
+         Reject Null hypothesis
