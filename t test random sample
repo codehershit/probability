@@ -1,0 +1,18 @@
+import numpy as np
+from numpy.random import normal
+
+y= normal(loc= 1500,scale= 500, size= 5000)
+
+y1= y[1000:1500]
+
+t= (y1.mean()-y.mean())/y1.std()
+print("t=", t)
+tc=1.96
+print("tc=" , tc)
+if t>tc or t<-tc :
+    print("Reject Null hypothesis")
+else: print("Cant Reject Null Hypothesis")
+
+# Output :t= 0.03509027461338554
+         :tc= 1.96
+         :Cant Reject Null Hypothesis
